@@ -6,6 +6,7 @@ import { sentryVitePlugin } from "@sentry/vite-plugin";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
+  base: "/cloudsync/",
   base: process.env.VITE_BASE_PATH || "/",
   server: {
     host: "::",
